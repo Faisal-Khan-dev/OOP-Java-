@@ -17,7 +17,7 @@ public class Main {
         Int3 x3 = new Int3(10);
         x3 = (Int3)x3.clone();       //clone # 2  shallow copy
         Int3 x3_cloned = (Int3) x3.clone();    //clone
-    //    x3Cloned.setJ(34);
+    //    x3_cloned.setJ(34);
         System.out.println("x3 : " + x3 + "\nCloned x3  : " + x3_cloned);
         
         ArrayList v = new ArrayList();
