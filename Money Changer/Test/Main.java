@@ -6,16 +6,16 @@ import Money_Changer.Customer;
 
 public class Main {
     public static void main(String[] args) {
+  
+         Cashier cashier = new Cashier();
+         int bill = cashier.generateBill(2000);
 
-        // Scanner sc = new Scanner(System.in);
+        Customer customer = new Customer();
+        customer.name();
+        customer.viewBill(bill);
+        int cash = customer.payCash();
 
-        // System.out.println("Enter Total Bill");
 
-        Cashier cashier = new Cashier();
-        cashier.setBill(1100);
-        
-        Customer customer = new Customer(2000);
-
-        cashier.calculateChange(customer);
+        cashier.calculateChange(bill, cash);
     }
 }

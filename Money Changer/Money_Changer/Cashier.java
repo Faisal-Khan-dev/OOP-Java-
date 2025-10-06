@@ -3,17 +3,18 @@ package Money_Changer;
 public class Cashier{
     private int bill;
 
-    public int getBill() {
-        return bill;
-    }
-    
-    public void setBill(int bill) {
-        this.bill = bill;
+    public Cashier() {
+        this.bill = 0;
     }
 
-    public void calculateChange(Customer customer) {
+    public int generateBill(int bill) {
+        return this.bill = bill;
+    }
+    
+
+    public void calculateChange(int bill , int cash) {
         int[] denominations = { 5000, 1000, 500, 100, 50, 20, 10, 5, 2, 1 };
-        int retun_Change = customer.getCashPaid() - bill;
+        int retun_Change = cash - bill;
 
          if (retun_Change == 0) {
             System.out.println("Thanks for shopping!");
