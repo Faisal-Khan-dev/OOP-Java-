@@ -3,7 +3,7 @@ package LMS;
 public class Student {
 
     private String studentName;
-    private int seatNo;
+    private String seatNo;
     private Courses[] courseList;
     int coursesCount;
 
@@ -16,7 +16,7 @@ public class Student {
         this.studentName = studentName;
     }
 
-    public void setSeatNo(int seatNo) {
+    public void setSeatNo(String seatNo) {
         this.seatNo = seatNo;
     }
 
@@ -24,7 +24,7 @@ public class Student {
         return studentName;
     }
 
-    public int getSeatNo() {
+    public String getSeatNo() {
         return seatNo;
     }
 

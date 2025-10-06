@@ -1,19 +1,19 @@
 package Money_Changer;
 
-public class Cashier extends Customer{
+public class Cashier{
     private int bill;
 
     public int getBill() {
         return bill;
     }
     
-    public void setBill(int cashPaid) {
-        this.bill = cashPaid;
+    public void setBill(int bill) {
+        this.bill = bill;
     }
 
-    public void calculateChange() {
+    public void calculateChange(Customer customer) {
         int[] denominations = { 5000, 1000, 500, 100, 50, 20, 10, 5, 2, 1 };
-        int retun_Change = getCashPaid() - bill;
+        int retun_Change = customer.getCashPaid() - bill;
 
          if (retun_Change == 0) {
             System.out.println("Thanks for shopping!");
